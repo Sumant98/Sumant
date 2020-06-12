@@ -1,0 +1,8 @@
+from gtts import gTTS
+from playsound import playsound
+audio = 'bee.mp3'
+language = 'en'
+sp =gTTS(text = 'Hi There',
+         lang = language,slow=False)
+sp.save(audio)
+playsound(audio)

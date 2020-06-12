@@ -1,0 +1,21 @@
+class calculation():
+    x = int(input("Enter the value "));
+    y = int(input("Enter the value "));
+    def __init__(self, default):
+        self.default = default;
+    def add(self):
+        return self.x+self.y;
+    def sub(self):
+        return self.x-self.y;
+    def mul(self):
+        return self.x*self.y;
+    def div(self):
+        return self.x/self.y;
+    def mod(self):
+        return self.x%self.y;
+val = calculation(9)
+print(f"addition is {val.add()}");
+print(f"substraction is {val.sub()}");
+print(f"multiplication is {val.mul()}");
+print(f"division is {val.div()}");
+print(f"mod value is {val.mod()}");
